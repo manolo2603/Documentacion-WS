@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navar">
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo center">Documentación</a>
+                  <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#" class="brand-logo"><img src="img/linux (2).png" alt=""></a></li>
+                  </ul>
+                </div>
+              </nav>
+            
+              
+            
+                
+        </div>
+    </header>
+    <main class="container">
+        <h3 id="productoController">Producto Controller</h3>
+        <div class="cards">
+
+            <!-- -------------------- -->
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/metodos/List Producto.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Método: List < Producto ><i class="material-icons right">Ver más</i></span>
+                  
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">List < Producto ><i class="material-icons right">Ver menos</i></span>
+                  <p><b>Método Http:</b> Get <br><b>Path:</b> http://localhost:8080/productos<br><b>ResponseStatus: </b>HttpStatus.OK<br>
+                    <b>Descripción: </b><br>Este método es llamado desde totalProductos()(Solo para obtener el tamaño del arreglo), simplemente retorna una lista de todos los productos.<br><b>Formato de respuesta:
+                </b></p>
+                <img id="tamanio1" src="img/salidas/todoslosProductos.png">
+            
+                </div>
+              </div>
+                <!-- -------------------- -->
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/metodos/totalProductos.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Método: totalProductos()<i class="material-icons right">Ver más</i></span>
+                  
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">totalProductos()<i class="material-icons right">Ver menos</i></span>
+                  <b>Método Http:</b> Get <br><b>Path:</b> http://localhost:8080/productos<br><b>ResponseStatus: </b>HttpStatus.OK<br>
+                    <b>Descripción: </b><br>Este método retorna el numero total de productos.<br><b>Formato de respuesta:
+                    </b></p>
+                    <img id="tamanio2" src="img/salidas/total">
+                </div>
+              </div>
+              <!-- -------------------- -->
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/metodos/productoxid.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Método: Producto por ID<i class="material-icons right">Ver más</i></span>
+                  
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Producto por ID<i class="material-icons right">Ver menos</i></span>
+                  <p><b>Método Http:</b> Get <br><b>Path:</b> http://localhost:8080/productos/{ID}<br><b>ResponseStatus: </b>HttpStatus.OK<br>
+                    <b>Descripción: </b><br>Este método retorna un solo producto mediante su identificador unico ID.<br><b>Formato de respuesta:
+                    </b></p>
+                    <img id="tamanio3" src="img/salidas/getId">
+                </div>
+              </div>
+
+              <!-- -------------------- -->
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/metodos/AgregarProducto.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Método: Agregar Producto<i class="material-icons right">Ver más</i></span>
+                  
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Agregar Producto<i class="material-icons right">Ver menos</i></span>
+                  <p><b>Método Http:</b> Post <br><b>Path:</b> http://localhost:8080/productos/<br><b>ResponseStatus: </b>HttpStatus.OK<br>
+                    <b>Descripción: </b><br>Este método recibe en formato JSON los parametros para crear un nuevo objeto de tipo producto<br><b>Formato de respuesta:
+                    </b></p>
+                    <img id="tamanio4" src="img/salidas/productoAgregado.png">
+                </div>
+              </div>
+              <!-- -------------------- -->
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/metodos/actualizarProductoporID.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Método: Actualizar Producto por ID<i class="material-icons right">Ver más</i></span>
+                  
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Actualizar Producto por ID<i class="material-icons right">Ver menos</i></span>
+                  <p><b>Método Http:</b> PUT <br><b>Path:</b> http://localhost:8080/productos/{ID}<br><b>ResponseStatus: </b>HttpStatus.OK<br>
+                    <b>Descripción: </b><br>Este método recibe en formato JSON los parametros para actualizar un objeto pero unicamente aplicado al que tenga el ID recibido <br><b>Formato de respuesta:
+                    </b></p>
+                    <img id="tamanio5" src="img/salidas/ActualizarProducto.png">
+                </div>
+              </div>
+              <!-- -------------------- -->
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/metodos/eliminarProducto.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Método: Eliminar Producto por ID<i class="material-icons right">Ver más</i></span>
+                  
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Eliminar Producto por ID<i class="material-icons right">Ver menos</i></span>
+                  <p><b>Método Http:</b> DELETE <br><b>Path:</b> http://localhost:8080/productos/{ID}<br><b>ResponseStatus: </b>HttpStatus.OK<br>
+                    <b>Descripción: </b><br>Este método elimina un objeto por ID unico sin afectar a los demas objetos <br><b>Formato de respuesta:
+                    </b></p>
+                    <img id="tamanio5" src="img/salidas/EliminarProducto.png">
+                </div>
+              </div>
+              
+        </div>
+                 
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Servicios Web</h5>
+              <p class="grey-text text-lighten-4">Proyecto de Unidad 2</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Integrantes</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/martin.gonzalezmiranda">Martín González Miranda</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/manuel.franciscopena.7/">Manuel Francisco Peña</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2021 Copyright 
+          
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

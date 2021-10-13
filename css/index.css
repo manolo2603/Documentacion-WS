@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
+  
+.brand-logo img{
+    width: 12%;
+    height: 12%;
+    
+}
+
+.navar .nav-wrapper{
+      background-color:#004d40;
+  }
+
+  .nav-content{
+    background-color:#004d40;
+  }
+
+.page-footer  {
+    background-color: #001330;
+  }
+
+  nav-content .tab{
+      align-items: flex-start;
+  }
+
+  footer{
+    background-color:#004d40; 
+}
+
+footer .container{
+    color: cornsilk;
+}
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .cards {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #tamanio1{
+    width:250%;
+    height: 200%;
+    margin: auto;
+  }
+
+  #tamanio2{
+    width:250%;
+    height: 100%;
+    margin: auto;
+  }
+
+  #tamanio3{
+    width:200%;
+    height: 200%;
+    margin: auto;
+  }
+
+  #tamanio4{
+    width:200%;
+    height: 250%;
+    margin: auto;
+  }
+
+  #tamanio5{
+    width:200%;
+    height: 250%;
+    margin: auto;
+  }
